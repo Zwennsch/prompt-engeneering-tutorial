@@ -1,0 +1,21 @@
+ChatGPT-Prompt Engeneering - Basics
+
+1. Clear instructions
+2. Adopt a persona
+    - give some specific information about who you are
+3. Specify the format
+    - do you want the output to be a...
+        - summary
+        - detailed explanation
+        - checklist...
+4. Avoid leading the answer
+5 Limit the scope
+
+Zero shot prompting vs Few shot prompting:
+
+Zero shot prompting:
+- prompting without any explicit training examples
+- the model performs a task without having seen any examples
+
+Few shot prompting:
+- We give the model data in advance

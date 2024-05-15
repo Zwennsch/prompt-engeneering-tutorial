@@ -1,8 +1,5 @@
 from promptlayer import PromptLayer
-# from dotenv import load_dotenv
-
 import os
-# load_dotenv()
 promptlayer_client = PromptLayer(api_key=os.environ.get("PROMPTLAYER_API_KEY"))
 
 
@@ -10,7 +7,7 @@ promptlayer_client = PromptLayer(api_key=os.environ.get("PROMPTLAYER_API_KEY"))
 OpenAI = promptlayer_client.openai.OpenAI
 openai = OpenAI()
 
-response = openai.completions.create(
+response = openai.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
         {'role':'system', 'content':'You are a helpful assistant.'},
@@ -21,4 +18,4 @@ response = openai.completions.create(
     pl_tags=['German chancellor']
 )
 
-print(response.choices[0].text)
+print(response)

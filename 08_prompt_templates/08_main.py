@@ -39,10 +39,10 @@ print(programming_framework_template)
 content = programming_framework_template.format(**variables)
 print(content)
 
-# # This return a tuple with two things:
-# # the first object is the response object from our chat completion call
-# # the second object is the pl_request_id from promptlayer
-# # like this: ({....}, 12345)
+# This return a tuple with two things:
+# the first object is the response object from our chat completion call
+# the second object is the pl_request_id from promptlayer
+# like this: ({....}, 12345)
 response, pl_request_id = client.chat.completions.create(
     model='gpt-3.5-turbo-1106',
     messages=[

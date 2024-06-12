@@ -2,3 +2,5 @@ gpt_api.txt
 .vscode
 .env
 newvenv
+venv
+.python-version
